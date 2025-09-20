@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drill 2: Working on Strings</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 20px;
+            background-color: rgb(145, 224, 145);
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 5px;
+            display: block;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: rgb(175, 175, 175);
+        }
+        #output {
+            margin-top: 20px;
+            white-space:pre-wrap;
+            background-color: rgb(107, 180, 107);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1> 🖨️ String Showcase: My Basic Info</h1>
+<br>
+    <label for="name_input"><b>Name: </b></label><br>
+    <input type="text" id="name_input">
+<br>
+    <label for="age_input"><b>Age: </b></label><br>
+    <input type="number" id="age_input">
+<br>
+    <label for="school_input"><b>School: </b></label><br>
+    <input type="text" id="school_input">
+<br>
+    <button id="genbtn"><b>Generate Message</b></button>
+
+    <div id="output"></div>
+
+    <py-config>
+        [[fetch]]
+        files = ["main.py"]
+    </py-config>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
